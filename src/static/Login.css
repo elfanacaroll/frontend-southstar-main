@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Helvetica;
+  font-family: Helvetica,;
 }
 
 body * { 
@@ -71,7 +71,7 @@ body * {
   border-radius: 10px;
   padding: 15px;
   background: #514869;
-  color: #f0ffffde;
+  color: #fff;
   font-size: 12pt; /*pt=unidade de medida para fontes*/
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
@@ -79,12 +79,12 @@ body * {
 }
 
 .textfield > label{
-  color: #f0ffffde;
+  color: #fff;
   margin-bottom: 10px;/*margem para baixo*/
 }
 
 .textfield > input::placeholder{
-  color: #f0ffff94;
+  color: #fff;
 }
 
 .button-login{
@@ -133,12 +133,11 @@ body * {
   }
 }
 
-
-
 .recall-forget {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 14.5px;
+  font-size: 15px;
   margin: 10px 15px;
 }
 
@@ -150,30 +149,17 @@ body * {
   margin-right: 5px;
 }
 
-.recall-forget a,
-.signup-link p a {
-  color: #fff;
+.recall-forget a {
+  color: #00ff88;
   text-decoration: none;
 }
 
-
-.container button {
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: none;
+.cadastrar-link p {
+  color: #fff;
+  font-size: 15px;
 }
 
-.container .signup-link {
-  font-size: 15px;
-  text-align: center;
-  margin: 20px 0 10px;
-  text-shadow: none;
+.cadastrar-link a {
+  color: #00ff88;
+  text-decoration: none;
 }

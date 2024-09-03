@@ -31,7 +31,7 @@ export default function Login() {
       <body>
         <div className="main-login">
           <div className="left-login">
-            <h1>Faça login <br></br> E entre para o nosso time!</h1>
+            <h1>Faça login :) <br></br> E entre para o nosso time!</h1>
           </div>
           <form onSubmit={handleSubmit}>
             <div class="right-login">
@@ -64,10 +64,10 @@ export default function Login() {
                   </label>
                   <a href="/forgot-password">Esqueceu a senha?</a>
                 </div>
-                <button type="submit">Login</button>
-                <div className="button-login">
+                <button class="button-login">Entrar</button>
+                <div className="cadastrar-link">
                   <p>
-                    Não tem uma conta? <a href="/register">Registrar</a>
+                    Não tem uma conta? <a href="/cadastro">Registrar</a>
                   </p>
                 </div>
                 {message && <p>{message}</p>}

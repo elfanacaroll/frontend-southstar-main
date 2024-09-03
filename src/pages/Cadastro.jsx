@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../static/Cadastro.css";
-import { FaLock, FaUser } from "react-icons/fa";
 import axios from "axios";
 
 export default function Cadastro() {
@@ -26,44 +25,56 @@ export default function Cadastro() {
 
   return (
     <>
-      <div className="registro">
-        <div className="container">
-          <h1>Cadastro</h1>
+      <body>
+        <div className="main-cadastro">
           <form onSubmit={handleSubmit}>
-            <div className="input-field">
-              <input
-                type="text"
-                placeholder="Nome"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              <FaUser className="icon" />
+            <div class="left-cadastro">
+              <div class="card-cadastro">
+                <h1>Cadastro</h1>
+                <div className="textfield">
+                  <label for="usuario">Usuário</label>
+                  <input
+                    type="text"
+                    name="usuario"
+                    placeholder="Usuário"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="textfield">
+                  <label for="senha">Senha</label>
+                  <input
+                    type="password"
+                    name="senha"
+                    placeholder="Senha"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="terms">
+                  <input type="checkbox" required />
+                  <label>
+                    Eu aceito os <a href="#">termos e condições</a>
+                  </label>
+                </div>
+                <button class="button-cadastro">Cadastrar</button>
+                {message && <p className="message">{message}</p>}
+                <div className="login-link">
+                  <p>
+                    Já tem uma conta? <a href="/login">Faça login</a>
+                  </p>
+                </div>
+                {message && <p>{message}</p>}
+              </div>
             </div>
-            <div className="input-field">
-              <input
-                type="password"
-                placeholder="Senha"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-              <FaLock className="icon" />
-            </div>
-            <div className="terms">
-              <input type="checkbox" required />
-              <label>
-                Eu aceito os <a href="#">termos e condições</a>
-              </label>
-            </div>
-            <button type="submit">Cadastrar</button>
           </form>
-          {message && <p className="message">{message}</p>}
-          <div className="login-link">
-            Já tem uma conta? <a href="/login">Faça login</a>
+          <div className="right-cadastro">
+            <h1>Se cadastre :)<br></br> E entre para o nosso time!</h1>
           </div>
         </div>
-      </div>
+      </body>
     </>
   );
 }
