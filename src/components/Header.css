@@ -8,11 +8,10 @@ header {
   position: fixed;
 }
 
-.logo img {
-  width: 100%;
-  background-color: black;
-  padding: 10px;
-  border-radius: 10px;
+.logo h1 {
+  text-align: center; 
+  color: #4ed353; 
+  margin-bottom: 20px; 
 }
 
 .links-nav a {
