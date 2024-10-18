@@ -112,11 +112,6 @@ const SouthStar = () => {
             <p className="add-posts">Adicione mais posts conforme necessário</p>
           </section>
         </main>
-
-        {/* Footer */}
-        <footer className="footer_home">
-          <p className="footer_texto_home">&copy; 2024 Threads Clone. Todos os direitos reservados.</p>
-        </footer>
       </body>
     </div>
   );
