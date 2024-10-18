@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+.top-bar {
+    background-color: black; /* Cor de fundo da barra superior */
+    color: green; /* Cor do texto da barra superior */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.container {
+    display: flex; /* Layout flexível */
+    min-height: calc(100vh - 60px); /* Altura mínima do container */
+}
+
+/* Sidebar (Explorar) */
+.sidebar_home {
+    width: 11%; /* Largura da sidebar */
+    background-color: #e0e0e0; /* Cor de fundo da sidebar */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex;
+    flex-direction: column; /* Direção da flexão em coluna */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.explorar_titulo_home {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.explorar_lista_home {
+    list-style: none; /* Remove marcadores da lista */
+    margin-top: 70px; /* Ajuste o valor conforme necessário */
+    
+}
+
+.explorar_item_home {
+    margin-bottom: 15px; /* Espaçamento abaixo de cada item */
+    display: flex; /* Layout flexível para os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 10px; /* Espaçamento entre o ícone e o link */
+}
+
+.explorar_link_home {
+    text-decoration: none; /* Remove sublinhado do link */
+    color: black; /* Cor do texto do link */
+    font-size: 16px; /* Tamanho da fonte do link */
+    transition: color 0.3s; /* Transição suave na cor */
+}
+
+.explorar_link_home:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Posts */
+.posts_home {
+    width: 75%; /* Largura da seção de posts */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.posts_titulo_home {
+    margin-bottom: 20px; /* Espaçamento abaixo do título dos posts */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.post_home {
+    background-color: white; /* Cor de fundo do post */
+    margin-bottom: 15px; /* Espaçamento abaixo de cada post */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+    display: flex; /* Layout flexível para o post */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 15px; /* Espaçamento entre os elementos do post */
+}
+
+.profile_pic_home {
+    width: 50px; /* Largura do contêiner da imagem do perfil */
+    height: 50px; /* Altura do contêiner da imagem do perfil */
+    border-radius: 50%; /* Borda arredondada para imagem circular */
+    overflow: hidden; /* Esconde qualquer parte da imagem que exceda o contêiner */
+}
+
+.profile_image_home {
+    width: 100%; /* Largura da imagem do perfil */
+    height: 100%; /* Altura da imagem do perfil */
+    object-fit: cover; /* Cobre todo o espaço do contêiner */
+}
+
+.post_conteudo_home {
+    flex: 1; /* Permite que o conteúdo do post ocupe o espaço restante */
+}
+
+.post_usuario_home {
+    margin-bottom: 10px; /* Espaçamento abaixo do nome do usuário */
+    font-size: 20px; /* Tamanho da fonte do nome do usuário */
+}
+
+.post_texto_home {
+    margin-bottom: 15px; /* Espaçamento abaixo do texto do post */
+}
+
+.botoes_home {
+    display: flex; /* Layout flexível para os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.btn_curtir_home, .btn_comentar_home {
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    border: none; /* Remove borda padrão */
+    border-radius: 20px; /* Bordas arredondadas nos botões */
+    background-color: #e0e0e0; /* Cor de fundo dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre os botões */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+.btn_curtir_home:hover, .btn_comentar_home:hover {
+    background-color: #d0d0d0; /* Muda a cor ao passar o mouse */
+}
+
+.footer_home {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo do rodapé */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Largura total */
+    position: fixed; /* Mantém o rodapé fixo na parte inferior */
+    bottom: 0; /* Alinhado ao fundo da página */
+}
+
+.footer_texto_home {
+    margin: 0; /* Remove margens */
+}
+
+.icon_curtir {
+    font-size: 24px; /* Ajuste o tamanho do ícone aqui */
+    margin-right: 5px; /* Espaço entre o ícone e o texto, se houver */
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+/* Estilo para o ícone de configurações */
+.configuracao_home {
+    position: absolute; /* Posiciona a configuração de forma absoluta */
+    bottom: 20px; /* Distância do fundo da sidebar */
+    right: 10px; /* Distância da borda direita da sidebar */
+}
+
+.config-icon {
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
